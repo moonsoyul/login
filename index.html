@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="hanstyle.css?after">
+  </head>
+  <body>
+    <div class="box">
+      <div class="form">
+        <div class="button-form">
+          <div id="button"></div>
+          <button class="toggleButton" onclick="toggleLogin()"><strong>LOGIN</strong></button>
+          <button class="toggleButton" onclick="toggleRegister()"><strong>Register</strong></button>
+          </div>
+          <form id="login"  action="" class="input-group">
+            <input type="text" class="input-field" placeholder="Your Email">
+            <input type="password" class="input-field" placeholder="Your Password">
+            <input type="checkbox" class="checkbox"><span>Remember Password</span>
+            <button class="submit"><strong>LOGIN</strong></button>
+          </form>
+          <form id="register" action="" class="input-group">
+            <input type="text" class="input-field" placeholder="Your Name">
+            <input type="text" class="input-field" placeholder="Your Email">
+            <input type="password" class="input-field" placeholder="Your Password">
+            <input type="checkbox" class="checkbox"><span>Remember Conditions</span>
+            <button class="submit"><strong>Register</strong></button>
+          </form>
+        </div>
+      </div>
+      <script type="text/javascript">
+
+        var x= document.getElementById("login");
+        var y= document.getElementById("register");
+        var z= document.getElementById("button");
+
+        function toggleLogin(){
+          x.style.left="50px";
+          y.style.left="450px";
+          z.style.left="0";
+        }
+
+        function toggleRegister(){
+          x.style.left="-400px";
+          y.style.left="50px";
+          z.style.left="110px";
+        }
+      </script>
+  </body>
+</html>
